@@ -21,6 +21,15 @@ const resolvers = {
                 .populate('friends')
                 .populate('thoughts');
         }
+    }, 
+    Mutation: {
+        addUser: async () => {
+            const user = await User.create(args);
+            return user;
+        },
+        login: async () => {
+
+        }
     }
 };
 
