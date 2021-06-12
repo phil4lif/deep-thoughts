@@ -29,6 +29,10 @@ const typeDefs = gql`
         thoughts(username: String): [Thought]
         thought(_id: ID!): Thought
     }
+    type Mutation {
+        login(email: String!, password: String!): User
+        addUser(username: String!, email: String!, password: String!): User
+    }
 `;
 
 module.exports = typeDefs;
