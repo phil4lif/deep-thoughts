@@ -23,7 +23,7 @@ const ThoughtForm = () => {
             cache.writeQuery({
                 query: QUERY_ME,
                 data: { me: { ...me, thoughts: [...me.thoughts, addThought] } }
-            })
+            });
         }
     });
 
